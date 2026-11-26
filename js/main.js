@@ -10,5 +10,6 @@ const sel=t=>{tabs.forEach(x=>{const on=x===t;x.setAttribute('aria-selected',on)
 tabs.forEach((t,i)=>{t.addEventListener('click',()=>sel(t));t.addEventListener('keydown',e=>{if(e.key==='ArrowRight')sel(tabs[(i+1)%tabs.length]);if(e.key==='ArrowLeft')sel(tabs[(i-1+tabs.length)%tabs.length])})});
 const cf=document.getElementById('cf');
 if(cf)cf.addEventListener('submit',e=>{e.preventDefault();if(!cf.reportValidity())return;document.getElementById('ok').style.display='block'});
-document.querySelectorAll('.ph img').forEach(i=>{const k=()=>i.remove();if(i.complete&&!i.naturalWidth)k();else i.addEventListener('error',k)});
+const fail=i=>{const fb=i.dataset.fallback;if(fb&&!i.dataset.used){i.dataset.used=1;i.src=fb;return}if(i.closest('.ph'))i.remove()};
+document.querySelectorAll('img').forEach(i=>{i.addEventListener('error',()=>fail(i));if(i.complete&&i.getAttribute('src')&&!i.naturalWidth)fail(i)});
 }

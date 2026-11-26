@@ -451,3 +451,8 @@ legend{font-weight:600;font-size:15px;margin-bottom:10px;padding:0}
 @media(max-width:600px){.bento{grid-template-columns:minmax(0,1fr);grid-auto-rows:280px}.bcard.big{grid-column:auto;grid-row:span 1}.bov p{max-height:120px;opacity:1}.zz-cols,.vals2,.metrics{grid-template-columns:minmax(0,1fr)}.collage{min-height:300px}.ccard{display:none}.gal{grid-template-columns:1fr}.gal .g2{display:none}}
 .cmp thead th:last-child{color:var(--mut)}
 .mission .big2{color:#fff}.mission .big2::first-line{color:var(--o)}
+.ph.mono{background:var(--k) radial-gradient(circle at 70% 20%,rgba(255,106,0,.35),transparent 55%)}
+.ph.mono figcaption{color:#9a9a95}
+.ph.mono figcaption svg{display:none}
+.ph.mono figcaption::before{content:"AO";font:900 clamp(72px,9vw,130px)/1 Archivo,sans-serif;color:var(--o);letter-spacing:-.04em}
+.ah-photo .ph{position:relative;z-index:1;height:100%;min-height:520px;aspect-ratio:auto!important;border-radius:24px 24px 0 0;outline:0}
