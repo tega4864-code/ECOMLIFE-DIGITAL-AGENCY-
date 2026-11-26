@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800">
+<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff6a00" stop-opacity=".45"/><stop offset="1" stop-color="#ff6a00" stop-opacity="0"/></linearGradient>
+<filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="24" stdDeviation="24" flood-opacity=".35"/></filter></defs>
+<g filter="url(#s)"><rect x="80" y="110" width="760" height="520" rx="22" fill="#161616" stroke="#2c2c2c"/></g>
+<circle cx="112" cy="142" r="7" fill="#ff6a00"/><circle cx="136" cy="142" r="7" fill="#444"/><circle cx="160" cy="142" r="7" fill="#444"/>
+<g font-family="Arial"><text x="120" y="205" font-size="18" fill="#9a9a9a">Store revenue, last 12 months</text>
+<text x="120" y="250" font-size="40" font-weight="900" fill="#fff">Growing every month</text>
+<rect x="640" y="190" width="160" height="38" rx="19" fill="#ff6a00"/><text x="720" y="215" text-anchor="middle" font-size="16" font-weight="700" fill="#111">Sample data</text></g>
+<path d="M150 470 C260 440 330 455 420 400 S600 330 790 260 V560 H150 Z" fill="url(#g)"/>
+<path d="M150 470 C260 440 330 455 420 400 S600 330 790 260" stroke="#ff6a00" stroke-width="5" fill="none"/>
+<rect x="150" y="470" width="30" height="90" rx="6" fill="#3a3a3a"/><rect x="202" y="440" width="30" height="120" rx="6" fill="#3a3a3a"/><rect x="254" y="460" width="30" height="100" rx="6" fill="#3a3a3a"/><rect x="306" y="410" width="30" height="150" rx="6" fill="#3a3a3a"/><rect x="358" y="420" width="30" height="140" rx="6" fill="#3a3a3a"/><rect x="410" y="380" width="30" height="180" rx="6" fill="#3a3a3a"/><rect x="462" y="390" width="30" height="170" rx="6" fill="#3a3a3a"/><rect x="514" y="330" width="30" height="230" rx="6" fill="#ff6a00"/><rect x="566" y="350" width="30" height="210" rx="6" fill="#3a3a3a"/><rect x="618" y="310" width="30" height="250" rx="6" fill="#3a3a3a"/><rect x="670" y="270" width="30" height="290" rx="6" fill="#ff6a00"/><rect x="722" y="290" width="30" height="270" rx="6" fill="#3a3a3a"/>
+<line x1="140" y1="575" x2="800" y2="575" stroke="#333"/>
+<g filter="url(#s)"><rect x="700" y="300" width="230" height="440" rx="34" fill="#fff"/></g>
+<rect x="716" y="318" width="198" height="404" rx="22" fill="#f6f6f4"/>
+<rect x="780" y="328" width="70" height="10" rx="5" fill="#111"/>
+<rect x="732" y="356" width="166" height="150" rx="14" fill="#ffe4d1"/>
+<rect x="790" y="390" width="50" height="90" rx="14" fill="#ff6a00"/><rect x="800" y="374" width="30" height="20" rx="4" fill="#111"/>
+<g font-family="Arial"><text x="732" y="535" font-size="16" font-weight="700" fill="#111">Daily serum</text><text x="732" y="558" font-size="14" fill="#777">In stock</text>
+<text x="898" y="535" text-anchor="end" font-size="16" font-weight="700" fill="#111">£34</text>
+<rect x="732" y="640" width="166" height="48" rx="24" fill="#111"/><text x="815" y="670" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">Checkout</text></g>
+<rect x="732" y="580" width="166" height="40" rx="10" fill="#fff" stroke="#e2e2e2"/>
+<g filter="url(#s)"><rect x="20" y="560" width="300" height="110" rx="18" fill="#fff"/></g>
+<circle cx="72" cy="615" r="28" fill="#ff6a00"/><path d="M60 615 l9 9 l17-19" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round"/>
+<g font-family="Arial"><text x="116" y="607" font-size="18" font-weight="700" fill="#111">New order</text><text x="116" y="633" font-size="15" fill="#777">2 items · paid</text></g>
+<g filter="url(#s)"><rect x="560" y="40" width="210" height="96" rx="18" fill="#ff6a00"/></g>
+<g font-family="Arial"><text x="584" y="80" font-size="15" fill="#111">Conversion rate</text><text x="584" y="114" font-size="28" font-weight="900" fill="#111">↑ trending</text></g>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+<rect width="1200" height="800" fill="#f3f3f1"/>
+<rect x="30" y="30" width="1140" height="740" rx="18" fill="#fff" stroke="#ddd"/>
+<rect x="30" y="30" width="1140" height="46" rx="18" fill="#111"/><rect x="30" y="58" width="1140" height="18" fill="#111"/>
+<circle cx="62" cy="53" r="7" fill="#ff6a00"/><circle cx="86" cy="53" r="7" fill="#555"/><circle cx="110" cy="53" r="7" fill="#555"/>
+<rect x="420" y="42" width="360" height="22" rx="11" fill="#2a2a2a"/>
+<text x="70" y="120" font-family="Arial" font-weight="900" font-size="26" fill="#111">NOIR ATELIER</text>
+<g font-family="Arial" font-size="15" fill="#555"><text x="620" y="117">Shop</text><text x="690" y="117">New in</text><text x="775" y="117">Bestsellers</text><text x="885" y="117">About</text></g>
+<rect x="1040" y="96" width="100" height="36" rx="18" fill="#111"/><text x="1090" y="120" text-anchor="middle" font-family="Arial" font-weight="700" font-size="15" fill="#fff">Cart (2)</text>
+<rect x="70" y="150" width="1060" height="190" rx="14" fill="#ececec"/>
+<text x="110" y="225" font-family="Arial" font-weight="900" font-size="44" fill="#111">New season drop</text>
+<rect x="110" y="250" width="300" height="12" rx="6" fill="#111" opacity=".35"/>
+<rect x="110" y="282" width="150" height="40" rx="20" fill="#111"/><text x="185" y="308" text-anchor="middle" font-family="Arial" font-weight="700" font-size="15" fill="#fff">Shop now</text>
+<circle cx="930" cy="245" r="120" fill="#111" opacity=".9"/><circle cx="1010" cy="200" r="50" fill="#fff" opacity=".5"/>
+<g><rect x="70" y="370" width="245" height="330" rx="14" fill="#fff" stroke="#e6e6e6"/>
+<rect x="82" y="382" width="221" height="190" rx="10" fill="#ececec"/><rect x="140" y="430" width="120" height="120" rx="10" fill="#111"/><path d="M170 430 v-25 a30 30 0 0 1 60 0 v25" stroke="#111" stroke-width="8" fill="none"/>
+<rect x="86" y="592" width="140" height="12" rx="6" fill="#111"/><rect x="86" y="614" width="90" height="10" rx="5" fill="#bbb"/>
+<rect x="86" y="648" width="70" height="30" rx="15" fill="#111"/><text x="299" y="668" text-anchor="end" font-family="Arial" font-weight="700" font-size="18" fill="#111">£29</text></g><g><rect x="345" y="370" width="245" height="330" rx="14" fill="#fff" stroke="#e6e6e6"/>
+<rect x="357" y="382" width="221" height="190" rx="10" fill="#ececec"/><rect x="415" y="430" width="120" height="120" rx="10" fill="#ff6a00"/><path d="M445 430 v-25 a30 30 0 0 1 60 0 v25" stroke="#111" stroke-width="8" fill="none"/>
+<rect x="361" y="592" width="140" height="12" rx="6" fill="#111"/><rect x="361" y="614" width="90" height="10" rx="5" fill="#bbb"/>
+<rect x="361" y="648" width="70" height="30" rx="15" fill="#111"/><text x="574" y="668" text-anchor="end" font-family="Arial" font-weight="700" font-size="18" fill="#111">£41</text></g><g><rect x="620" y="370" width="245" height="330" rx="14" fill="#fff" stroke="#e6e6e6"/>
+<rect x="632" y="382" width="221" height="190" rx="10" fill="#ececec"/><rect x="690" y="430" width="120" height="120" rx="10" fill="#c9c9c9"/><path d="M720 430 v-25 a30 30 0 0 1 60 0 v25" stroke="#111" stroke-width="8" fill="none"/>
+<rect x="636" y="592" width="140" height="12" rx="6" fill="#111"/><rect x="636" y="614" width="90" height="10" rx="5" fill="#bbb"/>
+<rect x="636" y="648" width="70" height="30" rx="15" fill="#111"/><text x="849" y="668" text-anchor="end" font-family="Arial" font-weight="700" font-size="18" fill="#111">£53</text></g><g><rect x="895" y="370" width="245" height="330" rx="14" fill="#fff" stroke="#e6e6e6"/>
+<rect x="907" y="382" width="221" height="190" rx="10" fill="#ececec"/><rect x="965" y="430" width="120" height="120" rx="10" fill="#444"/><path d="M995 430 v-25 a30 30 0 0 1 60 0 v25" stroke="#111" stroke-width="8" fill="none"/>
+<rect x="911" y="592" width="140" height="12" rx="6" fill="#111"/><rect x="911" y="614" width="90" height="10" rx="5" fill="#bbb"/>
+<rect x="911" y="648" width="70" height="30" rx="15" fill="#111"/><text x="1124" y="668" text-anchor="end" font-family="Arial" font-weight="700" font-size="18" fill="#111">£65</text></g></svg>
