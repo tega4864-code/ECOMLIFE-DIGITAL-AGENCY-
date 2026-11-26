@@ -3,17 +3,7 @@ const RM=matchMedia('(prefers-reduced-motion: reduce)').matches, FINE=matchMedia
 const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
 let ss=null;try{ss=sessionStorage}catch(e){}
 
-/* preloader + page transition */
-const pt=document.createElement('div');pt.className='pt';pt.innerHTML='<div class="pt-logo">Ecom<b>Life</b></div><div class="pt-num">0</div>';document.body.appendChild(pt);
-let first=true;try{first=!(ss&&ss.getItem('el-seen'))}catch(e){}
-if(RM){pt.remove();document.body.classList.add('ready')}
-else if(first){
-  pt.classList.add('pre');const n=$('.pt-num',pt);const t0=performance.now();
-  const tick=t=>{const v=Math.min(100,Math.round((t-t0)/9));n.textContent=v;if(v<100)requestAnimationFrame(tick);else setTimeout(()=>{pt.classList.add('out');document.body.classList.add('ready');try{ss.setItem('el-seen','1')}catch(e){}},150)};requestAnimationFrame(tick);
-}else{pt.classList.add('wipe');requestAnimationFrame(()=>requestAnimationFrame(()=>{pt.classList.add('out');document.body.classList.add('ready')}))}
-document.addEventListener('click',e=>{const a=e.target.closest('a[href]');if(!a||RM||e.metaKey||e.ctrlKey||e.defaultPrevented)return;const h=a.getAttribute('href');if(!/^[\w-]+\.html(#[\w-]*)?$/.test(h))return;e.preventDefault();pt.className='pt wipe in';setTimeout(()=>{location.href=h},450)});
-addEventListener('pageshow',e=>{if(e.persisted){pt.className='pt wipe out'}});
-
+document.body.classList.add('ready');
 /* scroll progress */
 const bar=document.createElement('div');bar.className='sprog';document.body.appendChild(bar);
 
