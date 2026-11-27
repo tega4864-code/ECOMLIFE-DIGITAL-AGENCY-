@@ -1302,3 +1302,20 @@ footer{padding-bottom:28px}
 }
 @media (prefers-reduced-motion:reduce){.g-arc{animation:none;stroke-dashoffset:300}}
 @media (max-width:640px){.bar70{overflow:hidden}.bar70 div{font-size:13px!important;padding-left:12px!important;padding-right:8px!important;white-space:nowrap}}
+
+/* v11: dynamic but calm button hover: fill clears to an outline + a small pop */
+@keyframes bpop{0%{scale:1}45%{scale:1.07}75%{scale:1.025}100%{scale:1.04}}
+.btn,.btn-ar,.fab-b{scale:1;transition:background-color .25s ease,color .25s ease,border-color .25s ease,scale .3s ease!important}
+.btn.p,.btn-ar,.fab-b{border:2px solid var(--o)!important}
+.btn.p:hover,.btn.p:focus-visible,.fab-b:hover,.fab-b:focus-visible{background:transparent!important;color:var(--o)!important;border-color:var(--o)!important}
+.btn-ar:hover,.btn-ar:focus-visible{background:transparent!important;color:var(--o)!important}
+.btn-ar:hover .btn-ar-i{background:var(--o);color:var(--k)}
+.btn-ar-i{transition:background-color .25s,color .25s}
+.btn.g:hover,.btn.s:hover,.btn.g:focus-visible,.btn.s:focus-visible{background:transparent!important;border-color:var(--o)!important;color:var(--o)!important}
+.btn.k:hover,.btn.k:focus-visible{background:transparent!important;color:var(--ink)!important;border-color:var(--ink)!important}
+.paper .btn.k:hover{color:var(--k)!important;border-color:var(--k)!important}
+.paper .btn.g:hover{color:#c25200!important}
+.btn:hover,.btn-ar:hover,.fab-b:hover,.btn:focus-visible,.btn-ar:focus-visible{animation:bpop .45s cubic-bezier(.3,.7,.3,1) forwards}
+.btn:active,.btn-ar:active,.fab-b:active{scale:.97!important;animation:none}
+.nav .btn.p:hover{background:transparent!important}
+@media (prefers-reduced-motion:reduce){.btn:hover,.btn-ar:hover,.fab-b:hover{animation:none}}
