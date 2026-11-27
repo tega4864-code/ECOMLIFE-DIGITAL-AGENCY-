@@ -18,7 +18,7 @@ $$('.btn').forEach(b=>{if(b.children.length)return;const t=b.textContent;b.textC
 if(FINE&&!RM)$$('.btn.p,.btn.k').forEach(b=>{b.addEventListener('mousemove',e=>{const r=b.getBoundingClientRect();b.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.2}px,${(e.clientY-r.top-r.height/2)*.3}px)`});b.addEventListener('mouseleave',()=>{b.style.transform=''})});
 
 /* cursor */
-if(FINE&&!RM){const c=document.createElement('div');c.className='cur';document.body.appendChild(c);let x=-50,y=-50,cx=x,cy=y;
+if(false){const c=document.createElement('div');c.className='cur';document.body.appendChild(c);let x=-50,y=-50,cx=x,cy=y;
   addEventListener('mousemove',e=>{x=e.clientX;y=e.clientY});
   document.addEventListener('mouseover',e=>{c.classList.toggle('big',!!e.target.closest('a,button,label,summary,input,select,textarea'))});
   const loop=()=>{cx+=(x-cx)*.2;cy+=(y-cy)*.2;c.style.transform=`translate(${cx}px,${cy}px)`;requestAnimationFrame(loop)};loop()}

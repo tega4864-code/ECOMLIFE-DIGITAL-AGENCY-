@@ -1,9 +1,9 @@
-Drop your photos into this folder with these exact names and they appear on the site automatically.
-Any slot without a photo shows a neat placeholder.
+HOW TO REPLACE PHOTOS
+Each photo slot on the site loads a free Unsplash photo when the site is online.
+To use your own photo, put it in this folder and change that image's src in the HTML,
+e.g. src="images/founder.jpg". Each <img> has a data-local attribute that suggests a file name.
+If a photo cannot load, a neat labelled dark placeholder shows instead.
 
-founder.jpg            Portrait of Abraham (Home "Why EcomLife" + About page), portrait 4:5
-featured-client.jpg    Featured client photo/screenshot (Home hero showcase + Results case study), wide 16:9
-work-1.jpg ... work-6.jpg   Client result cards (Home + Results page), 4:3
-blog-1.jpg ... blog-3.jpg   Insight article covers (Home), 16:10
-services-workshop.jpg  Strategy session / workshop photo (Services page), 4:3
-about-team.jpg         Team or workspace photo (About page), 4:3
+Abraham's photo: the home page "Meet the founder" block and the About page have a space reserved.
+Store mock-ups in the hero and the before/after slider are built in HTML, so they need no photos.
+Platform logos come from Simple Icons (CC0). Names without a logo are shown as text only.
