@@ -70,3 +70,5 @@ const onScroll=()=>{ticking=false;const vh=innerHeight;
 addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(onScroll)}},{passive:true});
 addEventListener('resize',onScroll);onScroll();
 })();
+(()=>{const w=document.querySelector('.hd-word'),p=document.querySelector('.hd-por');if(!w||matchMedia('(prefers-reduced-motion: reduce)').matches||innerWidth<900)return;let t=false;
+addEventListener('scroll',()=>{if(t)return;t=true;requestAnimationFrame(()=>{t=false;const y=Math.min(scrollY,innerHeight);w.style.translate=`0 ${y*-.12}px`;p.style.translate=`0 ${y*.08}px`})},{passive:true})})();
