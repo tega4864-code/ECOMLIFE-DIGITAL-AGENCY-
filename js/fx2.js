@@ -29,7 +29,7 @@ if(!RM){const els=$$(rvSel).filter(e=>!e.closest('.reveal,.rv,.ss-step,.calc-out
   $$('.rv,.imgrv').forEach(e=>ro.observe(e))}
 
 /* 3D tilt + spotlight on cards (mouse) */
-if(FINE&&!RM){$$('.proj,.lane,.svc,.vals2>div,.d90>div,.bcard,.aud>div').forEach(c=>{c.classList.add('tilt');
+if(false){$$('.proj,.lane,.svc,.vals2>div,.d90>div,.bcard,.aud>div').forEach(c=>{c.classList.add('tilt');
     c.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform=`perspective(900px) rotateX(${-y*5}deg) rotateY(${x*6}deg) translateY(-4px)`;c.style.setProperty('--mx',(x+.5)*100+'%');c.style.setProperty('--my',(y+.5)*100+'%')});
     c.addEventListener('mouseleave',()=>{c.style.transform=''})});
   $$('.inc>div,.lane.hot,.calc-out,.tpanel,.lead-m,.hx,.ph-hero,.sh,.ct-l').forEach(c=>{c.classList.add('spot');c.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect();c.style.setProperty('--sx',e.clientX-r.left+'px');c.style.setProperty('--sy',e.clientY-r.top+'px')})});

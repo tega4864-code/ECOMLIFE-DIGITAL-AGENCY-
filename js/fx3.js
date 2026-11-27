@@ -52,7 +52,7 @@ if(tog){const bs=$$('button',tog),pill=$('.lv8-pill',tog),cards=$$('.lv8-c');
   const init=()=>sel(bs.find(b=>b.getAttribute('aria-selected')==='true'));init();addEventListener('resize',init);document.fonts&&document.fonts.ready.then(init)}
 
 /* spotlight that follows the cursor on cards */
-if(FINE)$$('.spot,.sc8').forEach(c=>c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect();c.style.setProperty('--mx',e.clientX-r.left+'px');c.style.setProperty('--my',e.clientY-r.top+'px')}));
+if(FINE)[].forEach(c=>c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect();c.style.setProperty('--mx',e.clientX-r.left+'px');c.style.setProperty('--my',e.clientY-r.top+'px')}));
 
 /* hero mock-up: gentle depth on mouse move */
 const mk=$('.mk');
@@ -72,3 +72,9 @@ addEventListener('resize',onScroll);onScroll();
 })();
 (()=>{const w=document.querySelector('.hd-word'),p=document.querySelector('.hd-por');if(!w||matchMedia('(prefers-reduced-motion: reduce)').matches||innerWidth<900)return;let t=false;
 addEventListener('scroll',()=>{if(t)return;t=true;requestAnimationFrame(()=>{t=false;const y=Math.min(scrollY,innerHeight);w.style.translate=`0 ${y*-.12}px`;p.style.translate=`0 ${y*.08}px`})},{passive:true})})();
+
+(()=>{const b=document.getElementById('fab-b'),p=document.getElementById('fab-p');if(!b)return;
+const set=o=>{p.hidden=!o;b.setAttribute('aria-expanded',o)};
+b.addEventListener('click',e=>{e.stopPropagation();set(p.hidden)});
+document.addEventListener('click',e=>{if(!p.hidden&&!e.target.closest('#fab'))set(false)});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!p.hidden){set(false);b.focus()}})})();

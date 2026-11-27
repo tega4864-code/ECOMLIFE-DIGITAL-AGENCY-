@@ -14,8 +14,8 @@ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.targ
 $$('.splitted,.bar70,.lines').forEach(e=>io.observe(e));
 
 /* button text roll + magnetic */
-$$('.btn').forEach(b=>{if(b.children.length)return;const t=b.textContent;b.textContent='';const r=document.createElement('span');r.className='roll';const a=document.createElement('span');a.textContent=t;const c=document.createElement('span');c.textContent=t;c.setAttribute('aria-hidden','true');r.append(a,c);b.appendChild(r)});
-if(FINE&&!RM)$$('.btn.p,.btn.k').forEach(b=>{b.addEventListener('mousemove',e=>{const r=b.getBoundingClientRect();b.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.2}px,${(e.clientY-r.top-r.height/2)*.3}px)`});b.addEventListener('mouseleave',()=>{b.style.transform=''})});
+if(false)$$('.btn').forEach(b=>{if(b.children.length)return;const t=b.textContent;b.textContent='';const r=document.createElement('span');r.className='roll';const a=document.createElement('span');a.textContent=t;const c=document.createElement('span');c.textContent=t;c.setAttribute('aria-hidden','true');r.append(a,c);b.appendChild(r)});
+if(false)$$('.btn.p,.btn.k').forEach(b=>{b.addEventListener('mousemove',e=>{const r=b.getBoundingClientRect();b.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.2}px,${(e.clientY-r.top-r.height/2)*.3}px)`});b.addEventListener('mouseleave',()=>{b.style.transform=''})});
 
 /* cursor */
 if(false){const c=document.createElement('div');c.className='cur';document.body.appendChild(c);let x=-50,y=-50,cx=x,cy=y;
